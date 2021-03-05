@@ -1,0 +1,7 @@
+<div class='container'>
+  <% flash.each do |type, message| %>
+    <div class='shadow-lg p-3 sm-1 bg-<%= type %> rounded'>
+      <%= message %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <% @ideas.each do |idea| %> 
+      <div class="item">
+      <br/>
+        <h5><%= link_to idea.title,idea_path(idea)%></h5>
+        <span><%= idea.description %></span>
+        
+        <p> By <%= user_id=idea.user.first_name%>
+          <span style = "float:right">Likes: <%= idea.likes.count %></span>
+        </p>   
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">    
+    <% end %>
+  
+     
+ 
+</div>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Idea factory</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+
+
+    <nav id="nav_title" class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <h3 style="color:blue"><%= link_to 'Idea Factory', root_path %> </h3>
+        <ul class="nav nav-pills flex-column flex-sm-row" >
+          <li id="nav_title"  class="nav-item"><%= link_to 'New Idea', new_idea_path%></li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <%if user_signed_in? %>
+              <span class='text-muted mr-3'>Hello! 
+                <%= link_to "#{current_user.full_name}" %>
+              </span>
+
+              <li id="nav_title" class ="nav-item"><%= link_to "Signout", session_path,method: :delete, 
+                              data: {confirm: "Are you sure you want to log out?"}  %> </li>&nbsp;&nbsp;&nbsp;
+
+          <% else %>
+              <li id="nav_title" class ="nav-item"><%= link_to "Login", new_session_path%></li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <li id="nav_title" class ="nav-item"><%= link_to "Sign Up", new_user_path %></li>  
+
+          <% end %>
+        </ul>
+        
+
+        <%= render 'shared/flash_messages' %>
+    </nav>
+
+ 
+
+  
+    <%= yield %>
+  </body>
+</html>

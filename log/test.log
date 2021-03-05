@@ -1,0 +1,1096 @@
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Michel"], ["last_name", "Hand"], ["email", "samual.barrows-1@johnson.com"], ["password_digest", "$2a$04$Z23ri8j/m0In3s0fU.cuaOcHPDvh39FkuYysrEvUcG.UY8g9vlNKG"], ["created_at", "2020-12-05 02:50:09.353348"], ["updated_at", "2020-12-05 02:50:09.353348"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 13ms (Views: 2.0ms | ActiveRecord: 2.2ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Orville"], ["last_name", "Wyman"], ["email", "haley_gibson-2@doyle.com"], ["password_digest", "$2a$04$QLbXBm1UzQ9Hpw8zQ8zEqef51TxCWz/xpeyQlkuc4pDj8jmYYo3W6"], ["created_at", "2020-12-05 02:50:09.371976"], ["updated_at", "2020-12-05 02:50:09.371976"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 552)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Willodean"], ["last_name", "Labadie"], ["email", "amos.smith-1@schmitt.org"], ["password_digest", "$2a$04$w33rtdaBRGMwLnp771G97uPEHSiqNM1M46hFy.fjPOcpLzATTuyOG"], ["created_at", "2020-12-05 02:54:10.139073"], ["updated_at", "2020-12-05 02:54:10.139073"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 12ms (Views: 1.8ms | ActiveRecord: 2.1ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Kira"], ["last_name", "Rolfson"], ["email", "louie-2@spinka.com"], ["password_digest", "$2a$04$ETc31zN5hacPB3HZVFXxb.Diu2VpPdMVEFJtz4ff8VankP66a7mPW"], ["created_at", "2020-12-05 02:54:10.157123"], ["updated_at", "2020-12-05 02:54:10.157123"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "France"], ["last_name", "Sauer"], ["email", "lowell-3@kutch-bosco.info"], ["password_digest", "$2a$04$roqkNuekDKjBZrITOgNLYuR2Tiq3L.24f747CQJFuYQ2JNXUsBdnq"], ["created_at", "2020-12-05 02:54:10.165737"], ["updated_at", "2020-12-05 02:54:10.165737"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Chia"], ["last_name", "Hessel"], ["email", "isaias-4@spencer-rogahn.com"], ["password_digest", "$2a$04$iG2Q5LyQGb8f46d1InvmPuoGNCKCb8QS2e17Z7IQL4Tus0XjR.a5K"], ["created_at", "2020-12-05 02:54:10.171767"], ["updated_at", "2020-12-05 02:54:10.171767"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Judi"], ["last_name", "Kunde"], ["email", "colin-5@rowe.net"], ["password_digest", "$2a$04$fUeJSzMU1xav0d.JToKQZe7sbj82Y6ydgowMN8WaIXn3gq1h50lMW"], ["created_at", "2020-12-05 02:54:10.176562"], ["updated_at", "2020-12-05 02:54:10.176562"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Corie"], ["last_name", "Watsica"], ["email", "bree-6@parker-mclaughlin.info"], ["password_digest", "$2a$04$2tCxDujwzg8cGu8i5TsbuOO8TVnvQzdNaSSeXIKmWyhFLNd7qOQwy"], ["created_at", "2020-12-05 02:54:10.181931"], ["updated_at", "2020-12-05 02:54:10.181931"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Lourie"], ["last_name", "Keebler"], ["email", "sylvia_schroeder-1@thiel-friesen.name"], ["password_digest", "$2a$04$.T9fq24KKSFNDrScOCJfWOD/ap5hwEbpv.WFMpP/FQUzkyEnAx2w6"], ["created_at", "2020-12-05 02:58:56.919316"], ["updated_at", "2020-12-05 02:58:56.919316"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 13ms (Views: 1.8ms | ActiveRecord: 2.3ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Sunny"], ["last_name", "Lynch"], ["email", "mary_satterfield-2@muller.com"], ["password_digest", "$2a$04$iAUXfOCpUgX9ro8L9HEtLee10jXl0Kw/88wEDXLJUwAYlcdZ.9tCi"], ["created_at", "2020-12-05 02:58:56.937775"], ["updated_at", "2020-12-05 02:58:56.937775"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Bradford"], ["last_name", "Strosin"], ["email", "ryan-3@kling-terry.name"], ["password_digest", "$2a$04$tsmiycPATPI5a/K4DVlx1u7V7U/yyHyQIGOFeVl3iw1lnZV4C.Wcu"], ["created_at", "2020-12-05 02:58:56.945865"], ["updated_at", "2020-12-05 02:58:56.945865"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Toy"], ["email", "lawerence-4@padberg.io"], ["password_digest", "$2a$04$Z4DaFOE56NTzz4JIpwNLSeFWgKHW0wb82DkJ8mGem06QVeJzrA.pe"], ["created_at", "2020-12-05 02:58:56.951681"], ["updated_at", "2020-12-05 02:58:56.951681"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Phil"], ["last_name", "Stehr"], ["email", "tina_gutmann-5@heidenreich.net"], ["password_digest", "$2a$04$qGcvWQh3UeMmRTuNr4ewIODAq3xyKhqhMuW13WauKBLNM.moHKLr6"], ["created_at", "2020-12-05 02:58:56.956177"], ["updated_at", "2020-12-05 02:58:56.956177"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Hollis"], ["last_name", "Schmitt"], ["email", "royce-6@wilderman.org"], ["password_digest", "$2a$04$NvwpqFl9KjXjtj3OFeWHDOQ7X1PsTma.CU8g9O41qj4ToODuHhBfK"], ["created_at", "2020-12-05 02:58:56.960951"], ["updated_at", "2020-12-05 02:58:56.960951"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Sook"], ["last_name", "Fritsch"], ["email", "tess.dach-1@zboncak.io"], ["password_digest", "$2a$04$Kly/3F3mkTL6nn.Maol1JeJKCXwxy/M8AzMTgZTo1uKUIAK222Tua"], ["created_at", "2020-12-05 03:05:14.219806"], ["updated_at", "2020-12-05 03:05:14.219806"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 13ms (Views: 1.8ms | ActiveRecord: 2.3ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Sherrie"], ["last_name", "Schmitt"], ["email", "porfirio-2@effertz.biz"], ["password_digest", "$2a$04$gtNo6cjBo4SjpF8v4nhanuOcgtWCb1kM3L9D.udH/vlNimgM6UEvK"], ["created_at", "2020-12-05 03:05:14.238247"], ["updated_at", "2020-12-05 03:05:14.238247"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Augustine"], ["last_name", "Zboncak"], ["email", "lucile-3@hodkiewicz-schneider.info"], ["password_digest", "$2a$04$K3hWxugsgTFGYDYDny6rJ.35NlDhTS/Mk9OyQ4PfBOwD57jweTrXi"], ["created_at", "2020-12-05 03:05:14.246204"], ["updated_at", "2020-12-05 03:05:14.246204"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Corrie"], ["last_name", "Johns"], ["email", "yuonne-4@davis.io"], ["password_digest", "$2a$04$AbygB0lGLA35JUz8IHfFBeImlkqDnUfaYViddt0OBKsLpKMdABl/y"], ["created_at", "2020-12-05 03:05:14.251956"], ["updated_at", "2020-12-05 03:05:14.251956"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Gale"], ["last_name", "Hagenes"], ["email", "stuart.johnson-5@wuckert-hessel.net"], ["password_digest", "$2a$04$GJyGA86oFXqIVZhQcVqCseL8pXVaQhvlHHcxiURGh4h4H/3LMwfEa"], ["created_at", "2020-12-05 03:05:14.256523"], ["updated_at", "2020-12-05 03:05:14.256523"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Rodolfo"], ["last_name", "Lind"], ["email", "christian-6@becker.org"], ["password_digest", "$2a$04$Z0V7iux5wZOcarv/mFuGWOuQ5.WY8EMswkTUVVvjbVc3ieyJ9sY9K"], ["created_at", "2020-12-05 03:05:14.261141"], ["updated_at", "2020-12-05 03:05:14.261141"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Yulanda"], ["last_name", "Prohaska"], ["email", "brandie-1@wintheiser-sporer.org"], ["password_digest", "$2a$04$EE1D0pPY1Ke8aFiZfiWPhOJ8pLhs4dOqEUyG4hoobmY5S/pawi6Wm"], ["created_at", "2020-12-05 03:13:58.629311"], ["updated_at", "2020-12-05 03:13:58.629311"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 13ms (Views: 1.9ms | ActiveRecord: 2.4ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Rickey"], ["last_name", "Blanda"], ["email", "mauricio-2@cummerata-cronin.info"], ["password_digest", "$2a$04$Gw2WErl/Ktimm4SL75FHW.EebIvFWYdZR0y/WfzadeV6s729JYO2K"], ["created_at", "2020-12-05 03:13:58.648218"], ["updated_at", "2020-12-05 03:13:58.648218"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Chi"], ["last_name", "Bailey"], ["email", "dillon_stokes-3@considine-vandervort.co"], ["password_digest", "$2a$04$TyhHPNtRuP/YLaFylyEZIeXf2gTJz6mexcXBymlIc3i1rWcrcWEiO"], ["created_at", "2020-12-05 03:13:58.656284"], ["updated_at", "2020-12-05 03:13:58.656284"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Dante"], ["last_name", "Heaney"], ["email", "bryan-4@huel.com"], ["password_digest", "$2a$04$z9yXcTmd4wkrk6XALiLshugRAH3X9uD.LgqTnhbruTvnyIZEPt6Uq"], ["created_at", "2020-12-05 03:13:58.662403"], ["updated_at", "2020-12-05 03:13:58.662403"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Alise"], ["last_name", "Spencer"], ["email", "lynda.mann-5@hirthe.com"], ["password_digest", "$2a$04$z8v7s9qHp3S0bKm2KDXPjeT1HKTKstKFWainPmI9938dSdeLUlrOK"], ["created_at", "2020-12-05 03:13:58.667080"], ["updated_at", "2020-12-05 03:13:58.667080"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Brandi"], ["last_name", "Runolfsson"], ["email", "leisha_steuber-6@block.biz"], ["password_digest", "$2a$04$F2USovHIrtaFl9EqtgPZcO3gOy/21ANKKzX36ordvyR7KR9s.DUC6"], ["created_at", "2020-12-05 03:13:58.672091"], ["updated_at", "2020-12-05 03:13:58.672091"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Yuette"], ["last_name", "Mayert"], ["email", "rosenda-1@leannon.name"], ["password_digest", "$2a$04$9KKZab1TwXc1qO/26Lbt2.JyxOnQVBYphJ/.VZt7QNYs3QZQH/t.m"], ["created_at", "2020-12-05 03:16:15.561704"], ["updated_at", "2020-12-05 03:16:15.561704"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 12ms (Views: 1.8ms | ActiveRecord: 2.2ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Antione"], ["last_name", "Veum"], ["email", "clorinda-2@kohler-weimann.info"], ["password_digest", "$2a$04$d5bpR35wdkuOcL.J4skvgetS/HG85OKQvj1p7NHRFjW3Z4PwqAYn6"], ["created_at", "2020-12-05 03:16:15.579828"], ["updated_at", "2020-12-05 03:16:15.579828"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"regulates function in the immune system", "title"=>"OG Salad-1"}}
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 107)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Vesta"], ["last_name", "Lindgren"], ["email", "wade.simonis-3@murphy.net"], ["password_digest", "$2a$04$GlWj4WPZU85PrkgStlwYTuwlSHX/X/q0PF49Xh9WijY/QpXWc.AXO"], ["created_at", "2020-12-05 03:16:15.591366"], ["updated_at", "2020-12-05 03:16:15.591366"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"improves airflow to lungs", "title"=>"Key Lime Pie-2"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Key Lime Pie-2"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.6ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Key Lime Pie-2"], ["description", "improves airflow to lungs"], ["created_at", "2020-12-05 03:16:15.598000"], ["updated_at", "2020-12-05 03:16:15.598000"], ["user_id", 29]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/1
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms | Allocations: 1964)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Stephania"], ["last_name", "Lowe"], ["email", "jong-4@raynor.org"], ["password_digest", "$2a$04$JEMvKJTtzy3kBBrpY/rU6e94D/e9ACu/c8LCeiipyfE7Y5Qz.aDae"], ["created_at", "2020-12-05 03:16:15.617599"], ["updated_at", "2020-12-05 03:16:15.617599"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"reduces inflammation", "title"=>"Double Dutch Bus-3"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Double Dutch Bus-3"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.3ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Double Dutch Bus-3"], ["description", "reduces inflammation"], ["created_at", "2020-12-05 03:16:15.621837"], ["updated_at", "2020-12-05 03:16:15.621837"], ["user_id", 30]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/2
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms | Allocations: 953)
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas" ORDER BY "ideas"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Bertie"], ["last_name", "Toy"], ["email", "genaro.schulist-5@jacobi.biz"], ["password_digest", "$2a$04$OPFg3D9sHa/jpaQZ0lKZPukhmdd63D1pwW89vG9lU4FHF2ZEOWYay"], ["created_at", "2020-12-05 03:16:15.627434"], ["updated_at", "2020-12-05 03:16:15.627434"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"treats viral infections", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 1441)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Danny"], ["last_name", "Torphy"], ["email", "marni.kerluke-6@rice.net"], ["password_digest", "$2a$04$u5Dirg1uPtmN9nZATMqKeuLWWtCGsoCiNokX/AkntweWC3RfSRxoS"], ["created_at", "2020-12-05 03:16:15.637909"], ["updated_at", "2020-12-05 03:16:15.637909"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"stimulates function in the immune system", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 1289)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Peg"], ["last_name", "Cronin"], ["email", "kassandra_franecki-1@mccullough.net"], ["password_digest", "$2a$04$PmhSHAotBG8s5F.wcQb3ceb1/Ty4COoyAYYEJdHDoM8RbIZUWh2k6"], ["created_at", "2020-12-05 03:47:25.879449"], ["updated_at", "2020-12-05 03:47:25.879449"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 13ms (Views: 1.9ms | ActiveRecord: 2.3ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Artie"], ["last_name", "Larkin"], ["email", "florentino_turcotte-2@ankunding.info"], ["password_digest", "$2a$04$rJ8pGIh4SVJ7q5hGmarhE.mWVm.Zi16ZUKDh41znFA9a0dItlsXH."], ["created_at", "2020-12-05 03:47:25.898347"], ["updated_at", "2020-12-05 03:47:25.898347"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"suppresses muscle spasms", "title"=>"Sour Cheese-1"}}
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 107)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Randee"], ["last_name", "Hyatt"], ["email", "samatha-3@roob-daniel.org"], ["password_digest", "$2a$04$0yfcWmR8l1d05O/pVe.3ZuSuQyEYhAin0UobkrOE0u4wwBktFS3qO"], ["created_at", "2020-12-05 03:47:25.910008"], ["updated_at", "2020-12-05 03:47:25.910008"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"tranquilizing", "title"=>"Rainbow Sherbet-2"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Rainbow Sherbet-2"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Rainbow Sherbet-2"], ["description", "tranquilizing"], ["created_at", "2020-12-05 03:47:25.916416"], ["updated_at", "2020-12-05 03:47:25.916416"], ["user_id", 35]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/3
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms | Allocations: 1963)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Frances"], ["last_name", "Haag"], ["email", "walton.collins-4@hoppe-volkman.org"], ["password_digest", "$2a$04$dMxH0q8T/Efjyts82TXTFOLUK.TTtwyTKrc6hYoVSnrVMnElDsay."], ["created_at", "2020-12-05 03:47:25.922092"], ["updated_at", "2020-12-05 03:47:25.922092"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"prevents stress", "title"=>"Satellite OG-3"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Satellite OG-3"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.3ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Satellite OG-3"], ["description", "prevents stress"], ["created_at", "2020-12-05 03:47:25.927031"], ["updated_at", "2020-12-05 03:47:25.927031"], ["user_id", 36]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/4
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms | Allocations: 953)
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas" ORDER BY "ideas"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Ina"], ["last_name", "Schuppe"], ["email", "kiesha-5@moen-schneider.biz"], ["password_digest", "$2a$04$0ztbaUa.YCf.zIyZgFJxs.Kdxtz0autv7JmUt4a6LAey/QoGKZDny"], ["created_at", "2020-12-05 03:47:25.933250"], ["updated_at", "2020-12-05 03:47:25.933250"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"reduces vomiting and nausea", "title"=>""}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 1442)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Rebecca"], ["last_name", "Boehm"], ["email", "bailey_tillman-6@bernhard.name"], ["password_digest", "$2a$04$CfkpKF150owaRL/5aw7Fr.hcxvGgR4a2EghtZnvQgHXXyPXWfddvW"], ["created_at", "2020-12-05 03:47:25.942990"], ["updated_at", "2020-12-05 03:47:25.942990"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"relieves anxiety", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 1288)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Tad"], ["last_name", "Rice"], ["email", "patrick-1@wunsch.com"], ["password_digest", "$2a$04$gLG5SBbmc3kSOzaF6aKBFO9OjkugNVye6jydLYeCnUQHqocQVnHRe"], ["created_at", "2020-12-05 04:02:09.528581"], ["updated_at", "2020-12-05 04:02:09.528581"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 12ms (Views: 1.8ms | ActiveRecord: 2.3ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Arie"], ["last_name", "Zemlak"], ["email", "laurence-2@hills.info"], ["password_digest", "$2a$04$kt.uw3p0gt2FCVZvbVzyQ.zGxeKYERVWje0kGeI0unikoZougpl.6"], ["created_at", "2020-12-05 04:02:09.546627"], ["updated_at", "2020-12-05 04:02:09.546627"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"treats depression", "title"=>"Granddaddy Purple Kush-1"}}
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 107)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Nanci"], ["last_name", "Smith"], ["email", "lona-3@rogahn.biz"], ["password_digest", "$2a$04$PKtA02FWF3dHToIp29hsMeQMiuSAFWcy7d1CvNuHn0/DDEUFkcmCe"], ["created_at", "2020-12-05 04:02:09.557210"], ["updated_at", "2020-12-05 04:02:09.557210"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"reduces inflammation", "title"=>"OG Salad-2"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "OG Salad-2"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "OG Salad-2"], ["description", "reduces inflammation"], ["created_at", "2020-12-05 04:02:09.563145"], ["updated_at", "2020-12-05 04:02:09.563145"], ["user_id", 41]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/5
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms | Allocations: 1963)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Jaqueline"], ["last_name", "Okuneva"], ["email", "blake-4@adams.com"], ["password_digest", "$2a$04$6xt6VDGlCzRCh8JBlzgZI.K8iw2EPoj4zthyGAHfUNWoBt9Nsd5VO"], ["created_at", "2020-12-05 04:02:09.568240"], ["updated_at", "2020-12-05 04:02:09.568240"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"treats allergy symptoms", "title"=>"Blackberry Soda-3"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Blackberry Soda-3"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.3ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Blackberry Soda-3"], ["description", "treats allergy symptoms"], ["created_at", "2020-12-05 04:02:09.572648"], ["updated_at", "2020-12-05 04:02:09.572648"], ["user_id", 42]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/6
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms | Allocations: 953)
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas" ORDER BY "ideas"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Clark"], ["last_name", "Dietrich"], ["email", "gregorio-5@gutmann.io"], ["password_digest", "$2a$04$iiea0pZFOKphvgm50b.0jucdF.wFAJ7p3RwCMTtDh6A8t4bMyKK5G"], ["created_at", "2020-12-05 04:02:09.578997"], ["updated_at", "2020-12-05 04:02:09.578997"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"prevents infection", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 1441)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Gordon"], ["last_name", "Romaguera"], ["email", "esteban-6@kunze.io"], ["password_digest", "$2a$04$6ZcKgqnpU8P8G1/jQ6H8gOpv25oPkN8YgQFtbAodpI0AqF3mfMp3K"], ["created_at", "2020-12-05 04:02:09.589043"], ["updated_at", "2020-12-05 04:02:09.589043"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"treats viral infections", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 1288)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Lucia"], ["last_name", "Heathcote"], ["email", "gerardo-1@hegmann-schuppe.org"], ["password_digest", "$2a$04$ps93PkHFLS/EWp4wrQUcXujwk/3qsp2Bgeo1ia/EoT9dGIRbuKM5W"], ["created_at", "2020-12-05 04:07:24.082124"], ["updated_at", "2020-12-05 04:07:24.082124"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 12ms (Views: 1.7ms | ActiveRecord: 2.2ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Yuette"], ["last_name", "Aufderhar"], ["email", "crysta_boehm-2@hilll.com"], ["password_digest", "$2a$04$5SZElMPPD1NXUYNCQiYzqO1gbhW7vBLwaImQ29amHioKE9MDxUUJe"], ["created_at", "2020-12-05 04:07:24.099579"], ["updated_at", "2020-12-05 04:07:24.099579"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"reduces contractions in the small intestines", "title"=>"Sour Cheese-1"}}
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 107)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Bennie"], ["last_name", "Kulas"], ["email", "teddy_bruen-3@frami.co"], ["password_digest", "$2a$04$KUrbJfkbpOODCd3xgdwrVe8Kf2pbhkH6r1f4stTr7TQSiBIVLodPq"], ["created_at", "2020-12-05 04:07:24.109820"], ["updated_at", "2020-12-05 04:07:24.109820"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"reduces risk of artery blockage", "title"=>"NY Sour Diesel-2"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "NY Sour Diesel-2"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "NY Sour Diesel-2"], ["description", "reduces risk of artery blockage"], ["created_at", "2020-12-05 04:07:24.115643"], ["updated_at", "2020-12-05 04:07:24.115643"], ["user_id", 47]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/7
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms | Allocations: 1964)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Lesia"], ["last_name", "Gorczany"], ["email", "leo-4@schaden.io"], ["password_digest", "$2a$04$w49QRCghmmIWd6IiGy9AK.EXs5MecgPXOggIxlk0rXgYTYOOkcQhm"], ["created_at", "2020-12-05 04:07:24.121007"], ["updated_at", "2020-12-05 04:07:24.121007"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"suppresses appetite", "title"=>"Panama Punch-3"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Panama Punch-3"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Panama Punch-3"], ["description", "suppresses appetite"], ["created_at", "2020-12-05 04:07:24.125048"], ["updated_at", "2020-12-05 04:07:24.125048"], ["user_id", 48]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/8
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms | Allocations: 953)
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas" ORDER BY "ideas"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Torie"], ["last_name", "Wisoky"], ["email", "landon-5@schroeder.org"], ["password_digest", "$2a$04$7e0j6zkJ06qYl.d42.gKKOcWWsEvy6kt4z/35OjMP4fZRD3MXnPuW"], ["created_at", "2020-12-05 04:07:24.131136"], ["updated_at", "2020-12-05 04:07:24.131136"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"treats psoriasis", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 1441)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Armandina"], ["last_name", "King"], ["email", "perry-6@brekke.com"], ["password_digest", "$2a$04$jE8baBgXbWaiWmOUpRJqxu6bLqozMipsaDKdoFg6hUhVYIt73itSG"], ["created_at", "2020-12-05 04:07:24.141348"], ["updated_at", "2020-12-05 04:07:24.141348"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"stimulates function in the immune system", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 1289)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Pauletta"], ["last_name", "Collins"], ["email", "rodger.king-1@shanahan.com"], ["password_digest", "$2a$04$zEScs2IMiw2ZnIRyxDsnd.uDzRBkosotLo8mOrhAnOBQvCKlFbODa"], ["created_at", "2020-12-05 04:09:13.626022"], ["updated_at", "2020-12-05 04:09:13.626022"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 13ms (Views: 2.0ms | ActiveRecord: 2.2ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Chuck"], ["last_name", "Walter"], ["email", "stephine_schimmel-2@ritchie-miller.co"], ["password_digest", "$2a$04$i.zMKXq1ZavucF58072oXeCPUJ7R/DbsTe.n6H29dp7tUMGOUcmDy"], ["created_at", "2020-12-05 04:09:13.644818"], ["updated_at", "2020-12-05 04:09:13.644818"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"reduces contractions in the small intestines", "title"=>"Green Queen-1"}}
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 107)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Lane"], ["last_name", "Hahn"], ["email", "jamel.sawayn-3@bechtelar-mclaughlin.info"], ["password_digest", "$2a$04$nGbpm9il8kjdUCR9P9ziG.XQH6dCt6JFtP2x6NpLsBAShLxVaigMi"], ["created_at", "2020-12-05 04:09:13.657089"], ["updated_at", "2020-12-05 04:09:13.657089"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"stimulates function in the immune system", "title"=>"Blackberry Soda-2"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Blackberry Soda-2"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Blackberry Soda-2"], ["description", "stimulates function in the immune system"], ["created_at", "2020-12-05 04:09:13.663685"], ["updated_at", "2020-12-05 04:09:13.663685"], ["user_id", 53]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/9
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms | Allocations: 1964)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Elza"], ["last_name", "Hegmann"], ["email", "aurelio-4@hudson-kunde.biz"], ["password_digest", "$2a$04$mA2eh.KsxB0mUlwG7ixVc.Gy6l5lENvOKRayIbg7A1rJE/Fgnk4tO"], ["created_at", "2020-12-05 04:09:13.669653"], ["updated_at", "2020-12-05 04:09:13.669653"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"suppresses muscle spasms", "title"=>"Lucky Charms-3"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Lucky Charms-3"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.3ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Lucky Charms-3"], ["description", "suppresses muscle spasms"], ["created_at", "2020-12-05 04:09:13.675087"], ["updated_at", "2020-12-05 04:09:13.675087"], ["user_id", 54]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/10
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms | Allocations: 954)
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas" ORDER BY "ideas"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Kyle"], ["last_name", "Emard"], ["email", "wilda.wintheiser-5@turcotte.info"], ["password_digest", "$2a$04$I9yXn0FFScg9PjkjXbdfRuAPB3XQi81N0VDsujlouYz4/f9Ftks1G"], ["created_at", "2020-12-05 04:09:13.681337"], ["updated_at", "2020-12-05 04:09:13.681337"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"kills or slows bacteria growth", "title"=>""}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 1442)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "King"], ["last_name", "Schoen"], ["email", "lamar.ward-6@turcotte.org"], ["password_digest", "$2a$04$F9tQcPRa9kR1vTV2l65mn.f.7F7JWmo6qMJrtd5M9UR75QByeLkHG"], ["created_at", "2020-12-05 04:09:13.691587"], ["updated_at", "2020-12-05 04:09:13.691587"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"inhibits cell growth in tumors/cancer cells", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms | Allocations: 1289)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Avelina"], ["last_name", "Crist"], ["email", "erick_dickinson-1@okon.org"], ["password_digest", "$2a$04$NY5FG0HRykbOtZnHxDq/VO5aXWRtoaIDTvaQt7vKojNscDznJhv3C"], ["created_at", "2020-12-05 04:50:00.235435"], ["updated_at", "2020-12-05 04:50:00.235435"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 13ms (Views: 1.8ms | ActiveRecord: 2.3ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Argelia"], ["last_name", "Mitchell"], ["email", "coleman-2@rosenbaum-christiansen.net"], ["password_digest", "$2a$04$S.SUtAY2/SVNxsrRr6WeT.a0yHHFbfLT/o.hbRpYMhL7oz8h2M8cy"], ["created_at", "2020-12-05 04:50:00.253856"], ["updated_at", "2020-12-05 04:50:00.253856"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"relieves pain", "title"=>"Rude Boi OG-1"}}
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 107)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Donald"], ["last_name", "Cruickshank"], ["email", "nick.howell-3@schaefer.biz"], ["password_digest", "$2a$04$sN0PBgqIOSwvnzkHLycROej2vP.p/vyhuUbo.H6zU.FHiI3IVb1Bu"], ["created_at", "2020-12-05 04:50:00.264869"], ["updated_at", "2020-12-05 04:50:00.264869"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"prevents stress", "title"=>"Dutch Treat-2"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Dutch Treat-2"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.6ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Dutch Treat-2"], ["description", "prevents stress"], ["created_at", "2020-12-05 04:50:00.271122"], ["updated_at", "2020-12-05 04:50:00.271122"], ["user_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/1
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms | Allocations: 1963)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Ayana"], ["last_name", "Cormier"], ["email", "tim_bergnaum-4@rice.name"], ["password_digest", "$2a$04$eJ3bcT01NZwCpbLzPzFiFOTO1gw3WYAy.GN2jwSGktpy9QsXBzrQO"], ["created_at", "2020-12-05 04:50:00.277218"], ["updated_at", "2020-12-05 04:50:00.277218"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"relieves pain", "title"=>"Raskal OG-3"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Raskal OG-3"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.3ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Raskal OG-3"], ["description", "relieves pain"], ["created_at", "2020-12-05 04:50:00.281492"], ["updated_at", "2020-12-05 04:50:00.281492"], ["user_id", 4]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/2
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms | Allocations: 953)
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas" ORDER BY "ideas"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Rodger"], ["last_name", "Haley"], ["email", "sam-5@daniel.info"], ["password_digest", "$2a$04$TN18zi4ClqSihksz2vfh1uAVJntZMbqRAcLD1UDtKobMXxZTsCDR."], ["created_at", "2020-12-05 04:50:00.287507"], ["updated_at", "2020-12-05 04:50:00.287507"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"suppresses appetite", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 1441)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Ingeborg"], ["last_name", "Hartmann"], ["email", "jan-6@mueller.net"], ["password_digest", "$2a$04$YxjEDUt7xHEDNZQnnsxe/.hnmrm939gVuD5gOZNVbDA22LrJ7/fU."], ["created_at", "2020-12-05 04:50:00.297387"], ["updated_at", "2020-12-05 04:50:00.297387"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"regulates function in the immune system", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 1289)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Avis"], ["last_name", "Sauer"], ["email", "elisha-1@dibbert-schumm.info"], ["password_digest", "$2a$04$6NzRX.YFmL6dnW0qkkqUBeoNLO/c1YUvN00xsApMrecQNawOgLY3K"], ["created_at", "2020-12-05 05:03:26.820493"], ["updated_at", "2020-12-05 05:03:26.820493"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 12ms (Views: 1.9ms | ActiveRecord: 2.3ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Robert"], ["last_name", "McCullough"], ["email", "tova_stehr-2@funk.co"], ["password_digest", "$2a$04$u3zvAPPRiS0UyxO6tjWZx.EeDs8/blLRi2gV50Cj4uxcq990Nv23W"], ["created_at", "2020-12-05 05:03:26.838483"], ["updated_at", "2020-12-05 05:03:26.838483"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"treats psoriasis", "title"=>"Sonoma Glue-1"}}
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 107)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Edward"], ["last_name", "Sauer"], ["email", "reynaldo-3@kuvalis-yost.name"], ["password_digest", "$2a$04$2G7Kg2OckDVa3EZaYHo.lei4U.PXpg4S3wMgB1lihXN7Se7K/2qiq"], ["created_at", "2020-12-05 05:03:26.849553"], ["updated_at", "2020-12-05 05:03:26.849553"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"suppresses appetite", "title"=>"Canna Sutra-2"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Canna Sutra-2"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Canna Sutra-2"], ["description", "suppresses appetite"], ["created_at", "2020-12-05 05:03:26.855778"], ["updated_at", "2020-12-05 05:03:26.855778"], ["user_id", 9]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/3
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms | Allocations: 1963)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Elfrieda"], ["last_name", "Schinner"], ["email", "romana-4@oberbrunner.biz"], ["password_digest", "$2a$04$TBnq5wFwfEJKhDLdLQDznOMyviJgYmS6/KAQC8/w2Tsc6nltnO.kS"], ["created_at", "2020-12-05 05:03:26.861051"], ["updated_at", "2020-12-05 05:03:26.861051"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"reduces risk of artery blockage", "title"=>"Lucky Charms-3"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Lucky Charms-3"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Lucky Charms-3"], ["description", "reduces risk of artery blockage"], ["created_at", "2020-12-05 05:03:26.865331"], ["updated_at", "2020-12-05 05:03:26.865331"], ["user_id", 10]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/4
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms | Allocations: 954)
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas" ORDER BY "ideas"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Kristopher"], ["last_name", "Nikolaus"], ["email", "rhea_howell-5@weber.name"], ["password_digest", "$2a$04$PgjdEDQBpwh1AiVQQ4utief4HzZyRwvmyobZfBXhE3qtpOSBn9OIq"], ["created_at", "2020-12-05 05:03:26.872212"], ["updated_at", "2020-12-05 05:03:26.872212"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"relieves congestion", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms | Allocations: 1441)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Josef"], ["last_name", "Batz"], ["email", "matt-6@cremin.net"], ["password_digest", "$2a$04$jMOx6KrbMRgnOMKJvu3Uz.P9a9DvmbboI3zRL5mNeEkOcgIo6GKcK"], ["created_at", "2020-12-05 05:03:26.882385"], ["updated_at", "2020-12-05 05:03:26.882385"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"aids sleep", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 1288)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#new as HTML
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 759)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Aaron"], ["last_name", "Stoltenberg"], ["email", "matha-1@ohara-schroeder.biz"], ["password_digest", "$2a$04$1/S4IqJ7FS4Az02vU0kToOvbePnv3P.6sFwmr5598BKNdVU2vdPOW"], ["created_at", "2020-12-05 06:01:15.311594"], ["updated_at", "2020-12-05 06:01:15.311594"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 154)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 12ms (Views: 1.7ms | ActiveRecord: 2.2ms | Allocations: 7566)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Meagan"], ["last_name", "Wilkinson"], ["email", "esteban_king-2@ullrich.org"], ["password_digest", "$2a$04$94hWf7vca6P02.UiPaL9w.xyC/qmqBRNRb3gSyq53gW0AFOpPXtr2"], ["created_at", "2020-12-05 06:01:15.329303"], ["updated_at", "2020-12-05 06:01:15.329303"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 552)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"treats depression", "title"=>"Boss Hog-1"}}
+Redirected to http://test.host/session/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 107)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Mayola"], ["last_name", "Kihn"], ["email", "marty.bauch-3@pacocha-anderson.io"], ["password_digest", "$2a$04$dAP4J66jvKnTr2B7urBCZ.Y57eUysy6rGXm/jz3oDj05OVS5KG/KS"], ["created_at", "2020-12-05 06:01:15.339757"], ["updated_at", "2020-12-05 06:01:15.339757"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"treats psoriasis", "title"=>"Pitbull-2"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Pitbull-2"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.5ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pitbull-2"], ["description", "treats psoriasis"], ["created_at", "2020-12-05 06:01:15.346109"], ["updated_at", "2020-12-05 06:01:15.346109"], ["user_id", 15]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/5
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms | Allocations: 1963)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Riley"], ["last_name", "Wehner"], ["email", "kourtney-4@frami.org"], ["password_digest", "$2a$04$Wpm86nxrruXhg4zI.YfClukOxn2K2akmvBWUPW9IP03vGFpzXptBO"], ["created_at", "2020-12-05 06:01:15.351692"], ["updated_at", "2020-12-05 06:01:15.351692"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"does not affect mental activity", "title"=>"Critical Kush-3"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", "Critical Kush-3"], ["LIMIT", 1]]
+  [1m[36mIdea Create (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("title", "description", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Critical Kush-3"], ["description", "does not affect mental activity"], ["created_at", "2020-12-05 06:01:15.356260"], ["updated_at", "2020-12-05 06:01:15.356260"], ["user_id", 16]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/ideas/6
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms | Allocations: 954)
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas" ORDER BY "ideas"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Luke"], ["last_name", "Weber"], ["email", "garrett_emmerich-5@roob.co"], ["password_digest", "$2a$04$pLwld01p6gMPsu9Sgh6I8O5Ho9hxBeLV2Gcry/ll8OXHsqfrRWS5q"], ["created_at", "2020-12-05 06:01:15.362658"], ["updated_at", "2020-12-05 06:01:15.362658"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"kills or slows bacteria growth", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms | Allocations: 1442)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Wilber"], ["last_name", "Haley"], ["email", "quentin-6@veum-green.net"], ["password_digest", "$2a$04$p8jeThIDNRxXoSrcG6PtB.XPwfnlnBDlM.U8H3mr314lmbQmlpEe."], ["created_at", "2020-12-05 06:01:15.373252"], ["updated_at", "2020-12-05 06:01:15.373252"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by IdeasController#create as HTML
+  Parameters: {"idea"=>{"description"=>"relieves pain", "title"=>""}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mIdea Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "ideas" WHERE "ideas"."title" = $1 LIMIT $2[0m  [["title", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering ideas/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered ideas/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 1288)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
