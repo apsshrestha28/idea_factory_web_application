@@ -1,4 +1,4 @@
-# README
+Idea Factory 
 
 Description       : Microblogging system with post and response that are authenticated with username and password. 
 
